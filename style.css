@@ -1,0 +1,66 @@
+body{
+    background-color: white;
+}
+
+.head{
+    text-align: center; 
+    background: linear-gradient(to right, #9191c4, #7e0533);
+    animation: head 2s ease;
+    border-bottom: 15px rgb(7, 0, 0) solid;
+}
+#center{
+    text-align: center;
+    text-decoration: underline;
+}
+.text{
+    color: white;
+    background-color: rgb(124, 145, 11);
+    border: 1px solid black;
+    padding: 2px;
+}
+.legend{
+    color: red; 
+    background-color: black;
+    border: 2px solid; 
+    font-size:large;
+    padding:5px;
+}
+.right{
+    animation: left 2s ease;
+}
+.left{
+    animation: right 2s ease;
+}
+
+@keyframes right {
+    0% {
+		opacity: 0;
+		transform: translateX(-1000px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@keyframes left {
+    0% {
+		opacity: 0;
+		transform: translateX(1000px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+@keyframes head {
+    0% {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+    
+}
